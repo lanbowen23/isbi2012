@@ -1,4 +1,5 @@
-# isbi2012
+# U-Net for ISBI Challenge 2012 
+Final test rand score: 0.979  
 
 The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 and implemented with Keras functional API.
@@ -11,7 +12,7 @@ ISBI 2012 dataset: http://brainiac2.mit.edu/isbi_challenge/
 The dataset is in folder `data`.
 
 ### Model
-
+ `src/models/structures.py`
 ![imgs/unet-structure.jpg](imgs/unet-structure.jpg)
 
 ### Training
@@ -28,7 +29,7 @@ training hyper-parameters:
 - random_split: whether to random split the 30 images data
 
 
-Loss functions:
+Loss functions `src/utils/model.py`:
 - weighted cross entropy
 - focal loss
 - dice loss
